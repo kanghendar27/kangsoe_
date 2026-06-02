@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 45 98% 52%;
+  --primary-foreground: 45 100% 3%;
+  --secondary: 43 97% 11%;
+  --secondary-foreground: 48 100% 91%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 45 98% 52%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+.kangsoe-page-bg {
+  background-color: #fffdf7;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(57, 43, 1, 0.12) 1px,
+    transparent 0
+  );
+  background-size: 22px 22px;
+}
