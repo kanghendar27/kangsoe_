@@ -14,19 +14,39 @@ import {
 const buildingItems = [
   {
     title: "Snaf Studio",
+    href: "https://www.instagram.com/snafstudio/",
+    hoverClass: "hover:text-[#fcc10f]",
     description: "Ruang kreatif untuk visual design dan aset digital.",
   },
   {
     title: "Laman Digital",
+    href: "https://www.instagram.com/lamandigital.id/",
+    hoverClass: "hover:text-[#0692ef]",
     description: "Studio web untuk website dan sistem digital.",
   },
 ];
 
 const selectedProjects = [
-  "Poltek Kepribadian",
-  "Lestari Alam Qurani",
-  "Syifaush Shudur",
-  "Al-Mushlih",
+  {
+    title: "Poltek Kepribadian",
+    href: "https://kepribadian-tau.vercel.app/",
+  },
+  {
+    title: "Lestari Alam Qurani",
+    href: "https://lestarialamqurani.vercel.app/",
+  },
+  {
+    title: "Syifaush Shudur",
+    href: "https://syifaush-shudur.vercel.app/",
+  },
+  {
+    title: "Al-Mushlih",
+    href: "https://ponpes-al-mushlih.vercel.app/",
+  },
+  {
+    title: "Bimbel YPDH",
+    href: "https://ypdh.sch.id/",
+  },
 ];
 
 const socialLinks = [
@@ -176,9 +196,14 @@ export default function Home() {
                 >
                   <span className="mr-3 mt-[6px] h-2 w-2 shrink-0 rounded-full border-2 border-zinc-300" />
                   <span>
-                    <span className="font-semibold text-zinc-900">
+                    <a
+                      className={`font-semibold text-zinc-900 transition-colors ${item.hoverClass}`}
+                      href={item.href}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       {item.title}
-                    </span>
+                    </a>
                     <span className="block">{item.description}</span>
                   </span>
                 </li>
@@ -206,10 +231,12 @@ export default function Home() {
               {selectedProjects.map((project) => (
                 <a
                   className={projectButtonClass}
-                  href="#"
-                  key={project}
+                  href={project.href}
+                  key={project.title}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  {project}
+                  {project.title}
                   <ArrowRight className="ml-2 h-3.5 w-3.5" aria-hidden="true" />
                 </a>
               ))}
