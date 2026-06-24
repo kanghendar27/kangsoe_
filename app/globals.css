@@ -71,20 +71,22 @@ body {
   font-family: var(--font-geist-sans), Arial, sans-serif;
 }
 
-.text-main {
-  color: hsl(var(--text-main));
-}
+@layer utilities {
+  .text-main {
+    color: hsl(var(--text-main));
+  }
 
-.text-muted {
-  color: hsl(var(--text-muted));
-}
+  .text-muted {
+    color: hsl(var(--text-muted));
+  }
 
-.text-muted-2 {
-  color: hsl(var(--text-muted-2));
-}
+  .text-muted-2 {
+    color: hsl(var(--text-muted-2));
+  }
 
-.text-muted-3 {
-  color: hsl(var(--text-muted-3));
+  .text-muted-3 {
+    color: hsl(var(--text-muted-3));
+  }
 }
 
 .kangsoe-page-bg {
