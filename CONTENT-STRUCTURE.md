@@ -21,7 +21,7 @@ The copy should feel direct, capable, and personal. It should not sound like a l
 - Offer: Websites & Digital Systems.
 - Workflow: Next.js • AI-assisted workflow.
 - Currently Building: Snaf Studio, Laman Digital.
-- Selected Projects: Poltek Kepribadian, Lestari Alam Qurani, Syifaush Shudur, Al-Mushlih.
+- Selected Projects: Poltek Kepribadian, Lestari Alam Qurani, Syifaush Shudur, Al-Mushlih, LamanKampus, LamanEvent.
 - Contact actions: primary ways to reach Kang Hendar.
 - Social or external links: only include links that support trust or direct contact.
 
@@ -46,6 +46,8 @@ type ProfileContent = {
     "Lestari Alam Qurani",
     "Syifaush Shudur",
     "Al-Mushlih",
+    "LamanKampus",
+    "LamanEvent",
   ];
   contactLinks: Array<{
     label: string;

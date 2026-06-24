@@ -47,6 +47,16 @@ const selectedProjects = [
     title: "Bimbel YPDH",
     href: "https://ypdh.sch.id/",
   },
+  {
+    title: "LamanKampus",
+    href: "https://portal-prisain.vercel.app/",
+    description: "Sistem Digital Akademik",
+  },
+  {
+    title: "LamanEvent",
+    href: "https://event-dakwah-register.up.railway.app/admin/login",
+    description: "EDR (Event Digital Registration)",
+  },
 ];
 
 const socialLinks = [
