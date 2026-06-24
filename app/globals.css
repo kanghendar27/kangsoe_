@@ -22,6 +22,38 @@
   --input: 214.3 31.8% 91.4%;
   --ring: 45 98% 52%;
   --radius: 0.5rem;
+
+  --text-main: 0 0% 9%;
+  --text-muted: 0 0% 45%;
+  --text-muted-2: 0 0% 38%;
+  --text-muted-3: 0 0% 30%;
+}
+
+:root.dark {
+  --background: 45 100% 3%;
+  --foreground: 48 100% 91%;
+  --card: 45 60% 5%;
+  --card-foreground: 48 100% 91%;
+  --popover: 45 60% 5%;
+  --popover-foreground: 48 100% 91%;
+  --primary: 45 98% 52%;
+  --primary-foreground: 45 100% 3%;
+  --secondary: 43 97% 11%;
+  --secondary-foreground: 48 100% 91%;
+  --muted: 45 30% 10%;
+  --muted-foreground: 48 15% 55%;
+  --accent: 45 30% 15%;
+  --accent-foreground: 48 100% 91%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 43 40% 12%;
+  --input: 43 40% 12%;
+  --ring: 45 98% 52%;
+
+  --text-main: 48 40% 93%;
+  --text-muted: 48 20% 65%;
+  --text-muted-2: 48 15% 55%;
+  --text-muted-3: 48 10% 45%;
 }
 
 * {
@@ -33,6 +65,22 @@ body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
   font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+.text-main {
+  color: hsl(var(--text-main));
+}
+
+.text-muted {
+  color: hsl(var(--text-muted));
+}
+
+.text-muted-2 {
+  color: hsl(var(--text-muted-2));
+}
+
+.text-muted-3 {
+  color: hsl(var(--text-muted-3));
 }
 
 .kangsoe-page-bg {
@@ -48,7 +96,7 @@ body {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-color: #ffffff;
+  background-color: hsl(var(--background));
   background-image: repeating-linear-gradient(
     135deg,
     rgba(57, 43, 1, 0.05) 0px,

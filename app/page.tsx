@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { ThemeToggle } from "../components/theme-toggle";
 
 import {
   EmailIcon,
@@ -80,13 +81,17 @@ export default function Home() {
   return (
     <main className="kangsoe-page-bg flex min-h-screen flex-col items-center justify-center px-4 py-12 text-foreground antialiased">
       <header className="mb-12 text-center">
-        <h1 className="mb-3 text-[40px] font-semibold tracking-normal text-zinc-900">
+        <h1 className="mb-3 text-[40px] font-semibold tracking-normal text-main">
           Hi, I'm Hendar
         </h1>
-        <p className="text-[15px] font-medium text-zinc-500">
+        <p className="text-[15px] font-medium text-muted">
           Web & Digital Systems Builder
         </p>
       </header>
+
+      <div className="mb-8 flex justify-center">
+        <ThemeToggle />
+      </div>
 
       <section className="flex w-full max-w-[1000px] flex-col overflow-hidden rounded-xl border border-border bg-background shadow-sm md:flex-row">
         <aside className="flex w-full shrink-0 flex-col items-center border-b border-border p-8 md:w-[280px] md:border-b-0 md:border-r">
@@ -99,8 +104,8 @@ export default function Home() {
           </div>
 
           <div className="mb-6 flex w-36 flex-col items-center text-center">
-            <p className="mb-2 text-sm font-medium text-zinc-500">@kangsoe_</p>
-            <p className="text-sm font-semibold leading-relaxed text-zinc-900">
+            <p className="mb-2 text-sm font-medium text-muted">@kangsoe_</p>
+            <p className="text-sm font-semibold leading-relaxed text-main">
               Kang Hendar | Web Builder
             </p>
           </div>
@@ -108,7 +113,7 @@ export default function Home() {
           <div className="mb-6 flex gap-3">
             <a
               aria-label="WhatsApp"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-zinc-700 transition-colors hover:border-[#25D366] hover:bg-[#25D366] hover:text-white"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-muted-3 transition-colors hover:border-[#25D366] hover:bg-[#25D366] hover:text-white"
               href="https://wa.me/6281212828248"
               rel="noopener noreferrer"
               target="_blank"
@@ -117,7 +122,7 @@ export default function Home() {
             </a>
             <a
               aria-label="Telegram"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-zinc-700 transition-colors hover:border-[#229ED9] hover:bg-[#229ED9] hover:text-white"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-muted-3 transition-colors hover:border-[#229ED9] hover:bg-[#229ED9] hover:text-white"
               href="https://t.me/kang_soe"
               rel="noopener noreferrer"
               target="_blank"
@@ -126,7 +131,7 @@ export default function Home() {
             </a>
             <a
               aria-label="Email"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-zinc-700 transition-colors hover:border-[#0e0b00] hover:bg-[#0e0b00] hover:text-white"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-muted-3 transition-colors hover:border-[#0e0b00] hover:bg-[#0e0b00] hover:text-white"
               href="mailto:lamandigital.id@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
@@ -157,10 +162,10 @@ export default function Home() {
 
         <section className="flex flex-1 flex-col border-b border-border md:border-b-0 md:border-r">
           <div className="flex flex-1 flex-col items-start border-b border-border p-8">
-            <h2 className="mb-4 text-lg font-medium text-zinc-900">
+            <h2 className="mb-4 text-lg font-medium text-main">
               Websites & Digital Systems
             </h2>
-            <p className="mb-6 text-[14px] leading-relaxed text-zinc-600">
+            <p className="mb-6 text-[14px] leading-relaxed text-muted-2">
               Saya membangun website dan sistem berbasis web untuk membantu
               personal brand, bisnis, sekolah, pesantren, dan lembaga mengelola
               informasi, data, layanan, dan kebutuhan digital mereka.
@@ -175,10 +180,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-1 flex-col items-start p-8">
-            <h2 className="mb-4 text-lg font-medium text-zinc-900">
+            <h2 className="mb-4 text-lg font-medium text-main">
               How I Work
             </h2>
-            <p className="mb-6 text-[14px] leading-relaxed text-zinc-600">
+            <p className="mb-6 text-[14px] leading-relaxed text-muted-2">
               Saya menggunakan Next.js dan AI-assisted workflow untuk membantu
               proses perancangan, penyusunan struktur, dan implementasi website
               agar lebih terarah, rapi, dan mudah dikembangkan.
@@ -195,19 +200,19 @@ export default function Home() {
 
         <section className="flex flex-1 flex-col">
           <div className="flex flex-1 flex-col items-start border-b border-border p-8">
-            <h2 className="mb-4 text-lg font-medium text-zinc-900">
+            <h2 className="mb-4 text-lg font-medium text-main">
               Currently Building
             </h2>
             <ul className="mb-6 w-full space-y-4">
               {buildingItems.map((item) => (
                 <li
-                  className="flex items-start text-[14px] leading-relaxed text-zinc-600"
+                  className="flex items-start text-[14px] leading-relaxed text-muted-2"
                   key={item.title}
                 >
-                  <span className="mr-3 mt-[6px] h-2 w-2 shrink-0 rounded-full border-2 border-zinc-300" />
+                  <span className="mr-3 mt-[6px] h-2 w-2 shrink-0 rounded-full border-2 border-border" />
                   <span>
                     <a
-                      className={`font-semibold text-zinc-900 transition-colors ${item.hoverClass}`}
+                      className={`font-semibold text-main transition-colors ${item.hoverClass}`}
                       href={item.href}
                       rel="noopener noreferrer"
                       target="_blank"
@@ -229,10 +234,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-1 flex-col items-start p-8">
-            <h2 className="mb-4 text-lg font-medium text-zinc-900">
+            <h2 className="mb-4 text-lg font-medium text-main">
               Selected Projects
             </h2>
-            <p className="mb-6 text-[14px] leading-relaxed text-zinc-600">
+            <p className="mb-6 text-[14px] leading-relaxed text-muted-2">
               Beberapa project web yang saya kerjakan untuk kebutuhan lembaga,
               pendidikan, pesantren, dan sistem digital.
             </p>
@@ -255,7 +260,7 @@ export default function Home() {
         </section>
       </section>
 
-      <p className="mt-6 text-center text-xs font-medium text-zinc-500">
+      <p className="mt-6 text-center text-xs font-medium text-muted">
         © 2026 kangsoe_. Seluruh hak cipta dilindungi.
       </p>
     </main>
