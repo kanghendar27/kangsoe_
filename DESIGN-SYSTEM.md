@@ -1,6 +1,6 @@
 # Design System
 
-This document is the design source of truth before the final UI is implemented.
+This document is the design source of truth for Kang Hendar's Personal Digital Business Card / Personal Landing Card.
 
 ## Foundation
 
@@ -13,37 +13,53 @@ This document is the design source of truth before the final UI is implemented.
 
 ## Color Guide
 
-Use this palette as the final color direction:
+The palette is implemented as CSS custom properties in `app/globals.css` and extended in `tailwind.config.ts`:
 
-- `#0e0b00` Secondary / near black.
-- `#392b01` Dark Brown.
-- `#fcc10f` Primary & Accent.
-- `#fef3cf` Soft Light.
+- `#fcc10f` — Primary & Accent (HSL: 45 98% 52%)
+- `#0e0b00` — Secondary / near black (HSL: 45 100% 3%)
+- `#392b01` — Dark Brown (HSL: 43 97% 11%)
+- `#fef3cf` — Soft Light
 
 ## Color Roles
 
-- Primary action and accent emphasis: `#fcc10f`.
+- Primary action and accent emphasis: `#fcc10f` — used for buttons, ring, hover highlights.
 - Main text, high-contrast surfaces, and strong UI anchors: `#0e0b00`.
 - Secondary depth, borders, and warm dark details: `#392b01`.
 - Light surfaces and soft background areas: `#fef3cf`.
+- Text hierarchy: `--text-main`, `--text-muted`, `--text-muted-2`, `--text-muted-3` via CSS utilities `.text-main`, `.text-muted`, etc.
 
-## UI Direction
+## UI Direction (Implemented)
 
-- Build a concise personal landing card, not a full portfolio or agency homepage.
-- Prioritize identity, positioning, selected credibility markers, and contact actions.
-- Keep the interface restrained, warm, and sharp.
-- Use the final palette deliberately; avoid introducing a broad unrelated color system.
-- Do not implement final visuals until the UI phase begins.
+The UI is a single-page personal landing card with:
 
-## Component Rules
+- Hero header with theme toggle
+- Profile sidebar (photo, username, contact buttons, social links)
+- Three-column content layout on desktop, stacked on mobile
+  - Offer panel: "Websites & Digital Systems"
+  - Workflow panel: "How I Work"
+  - Currently Building list
+  - Selected Projects list
+- Action buttons ("Details") linking to external pages
+- Smooth fade-in animations
+- Dark/light mode via `next-themes`
 
-- Place reusable UI primitives in `components/ui`.
-- Use `lib/utils.ts` for the shared `cn` helper.
-- Prefer shadcn/ui-compatible component patterns.
-- Use Geist consistently across the page.
-- Keep components suitable for a static one-page card.
+## Component Architecture
 
-## Out Of Scope For Design
+- `components/ui/` — shadcn primitives (`button.tsx`, `card.tsx`)
+- `components/hero-header.tsx` — greeting + theme toggle
+- `components/sidebar.tsx` — profile card with contact & social links
+- `components/section-panel.tsx` — reusable content panel with optional action button
+- `components/theme-toggle.tsx` — dark/light toggle button
+- `components/icons/social-icons.tsx` — SVG icon set
+- `lib/content.ts` — all content data separated from UI
+- `lib/utils.ts` — shared `cn` helper
+
+## Content Layer
+
+All page content is maintained in `lib/content.ts` with typed interfaces:
+- `BuildingItem`, `ProjectItem`, `SocialLink`, `ContactLink`
+
+## Out Of Scope
 
 - Long portfolio layouts.
 - Agency website sections.

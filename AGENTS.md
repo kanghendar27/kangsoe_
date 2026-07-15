@@ -37,11 +37,10 @@ This project must not become:
 - Websites & Digital Systems.
 - Next.js and AI-assisted workflow.
 - Currently Building: Snaf Studio, Laman Digital.
-- Selected Projects: Poltek Kepribadian, Lestari Alam Qurani, Syifaush Shudur, Al-Mushlih.
+- Selected Projects: Poltek Kepribadian, Lestari Alam Qurani, Syifaush Shudur, Al-Mushlih, Bimbel YPDH.
 
 ## Implementation Notes
 
-- Do not implement the final UI until the content and design direction are confirmed.
 - Keep future changes aligned with the documentation in this folder.
 - Avoid adding backend, database, CMS, auth, or PWA features unless the project scope is explicitly changed.
 
