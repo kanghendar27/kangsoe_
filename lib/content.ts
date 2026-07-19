@@ -40,7 +40,7 @@ export interface ContactLink {
 
 export const profile = {
   name: "Kang Hendar",
-  role: "Web Builder & Digital Systems",
+  role: "Web Builder & Digital Systems Developer",
   greeting: "Hi, I'm Hendar",
   username: "@kangsoe_",
   tagline: "Kang Hendar | Web Builder",
@@ -51,13 +51,13 @@ export const profile = {
 export const buildingItems: BuildingItem[] = [
   {
     title: "Snaf Studio",
-    href: "https://www.instagram.com/snafstudio/",
+    href: "https://id.pinterest.com/snafstudio/",
     hoverClass: "hover:text-[#fcc10f]",
     description: "Ruang kreatif untuk visual design dan aset digital.",
   },
   {
     title: "Laman Digital",
-    href: "https://www.instagram.com/lamandigital.id/",
+    href: "https://lamandigital.vercel.app/",
     hoverClass: "hover:text-[#0692ef]",
     description: "Studio web untuk website dan sistem digital.",
   },
