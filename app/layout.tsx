@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Kang Hendar — Web & Digital Systems Builder",
   description:
     "Kartu nama digital Kang Hendar, Web & Digital Systems Builder yang membangun website dan sistem berbasis web untuk personal brand, bisnis, sekolah, pesantren, dan lembaga.",
+  verification: { other: { "p:domain_verify": "868f791312e74fe5e519ccf1490467e9" } },
   openGraph: {
     title: "Kang Hendar — Web & Digital Systems Builder",
     description:
