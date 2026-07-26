@@ -9,7 +9,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="inline-flex h-9 items-center justify-center rounded-full border border-input bg-background px-6 text-sm font-medium transition-colors hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00]"
+        className="inline-flex h-9 items-center justify-center rounded-full border border-input bg-background px-6 text-sm font-medium transition-colors hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00] touch-active:border-[#fcc10f] touch-active:bg-[#fcc10f] touch-active:text-[#0e0b00]"
       >
         Kembali ke Beranda
       </Link>

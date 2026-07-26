@@ -13,7 +13,7 @@ export function ThemeToggle() {
       aria-label="Toggle theme"
       variant="outline"
       size="icon"
-      className="rounded-full transition-all duration-300 hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00]"
+      className="rounded-full transition-all duration-300 hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00] touch-active:border-[#fcc10f] touch-active:bg-[#fcc10f] touch-active:text-[#0e0b00]"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

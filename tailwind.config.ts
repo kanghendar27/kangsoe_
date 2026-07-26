@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config = {
   darkMode: "class",
@@ -62,7 +63,11 @@ const config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant("touch-active", "@media (hover: none) and (pointer: coarse) { &:active }");
+    }),
+  ],
 } satisfies Config;
 
 export default config;

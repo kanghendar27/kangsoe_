@@ -64,7 +64,7 @@ export default function Home() {
               {selectedProjects.map((project) => (
                 <a
                   key={project.title}
-                  className="inline-flex h-9 items-center justify-between rounded-full border border-input bg-background px-4 text-[13px] font-medium transition-colors hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00]"
+                  className="inline-flex h-9 items-center justify-between rounded-full border border-input bg-background px-4 text-[13px] font-medium transition-colors hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00] touch-active:border-[#fcc10f] touch-active:bg-[#fcc10f] touch-active:text-[#0e0b00]"
                   href={project.href}
                   rel="noopener noreferrer"
                   target="_blank"

@@ -48,7 +48,7 @@ export function SectionPanel({
         <div className="mt-auto px-8 pb-8 pt-5">
           <Button
             variant="outline"
-            className="h-9 rounded-full border border-input bg-background px-4 text-sm font-medium transition-all duration-300 hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00]"
+            className="h-9 rounded-full border border-input bg-background px-4 text-sm font-medium transition-all duration-300 hover:border-[#fcc10f] hover:bg-[#fcc10f] hover:text-[#0e0b00] touch-active:border-[#fcc10f] touch-active:bg-[#fcc10f] touch-active:text-[#0e0b00]"
             asChild
           >
             <a
