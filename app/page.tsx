@@ -79,7 +79,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-8 text-center text-xs font-medium text-muted animate-fade-in">
-        <p>© 2026 kangsoe_. Seluruh hak cipta dilindungi.</p>
+        <p>© 2026 Lead & Founder at Laman Digital. Seluruh hak cipta dilindungi.</p>
       </footer>
     </main>
   );

@@ -11,7 +11,7 @@ This document is the content source of truth for Kang Hendar's Personal Digital 
 - Positioning: Web Builder & Digital Systems.
 - Primary offer: Websites & Digital Systems.
 - Workflow signal: Next.js • AI-assisted workflow.
-- Profile image: `/foto_profil.jpg`.
+- Profile image: `/kang-hendar.png`.
 
 ## Primary Message
 

@@ -44,7 +44,7 @@ export const profile = {
   greeting: "Hi, I'm Hendar",
   username: "@kangsoe_",
   tagline: "Kang Hendar | Web Builder",
-  imageSrc: "/foto_profil.jpg",
+  imageSrc: "/kang-hendar.png",
   imageAlt: "Kang Hendar",
 } as const;
 
