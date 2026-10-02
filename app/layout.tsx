@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kangsoe.vercel.app"),
   title: "Kang Hendar — Web & Digital Systems Builder",
   description:
-    "Kartu nama digital Kang Hendar, Web & Digital Systems Builder yang membangun website dan sistem berbasis web untuk personal brand, bisnis, sekolah, pesantren, dan lembaga.",
+    "Membangun website & sistem digital untuk personal brand, bisnis, sekolah, pesantren, dan lembaga. Next.js & AI-assisted workflow.",
   verification: { other: { "p:domain_verify": "868f791312e74fe5e519ccf1490467e9" } },
   openGraph: {
     title: "Kang Hendar — Web & Digital Systems Builder",
     description:
-      "Kartu nama digital Kang Hendar, berisi profil, project, dan link untuk terhubung.",
+      "Membangun website & sistem digital untuk personal brand, bisnis, sekolah, pesantren, dan lembaga. Next.js & AI-assisted workflow.",
     url: "https://kangsoe.vercel.app",
     siteName: "Kang Hendar",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image-kangsoe.png",
         alt: "Kang Hendar digital business card",
       },
     ],
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kang Hendar — Web & Digital Systems Builder",
     description:
-      "Kartu nama digital Kang Hendar, Web & Digital Systems Builder.",
-    images: ["/og-image.png"],
+      "Membangun website & sistem digital untuk personal brand, bisnis, sekolah, pesantren, dan lembaga. Next.js & AI-assisted workflow.",
+    images: ["/og-image-kangsoe.png"],
   },
 };
 
