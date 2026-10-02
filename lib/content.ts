@@ -40,7 +40,7 @@ export interface ContactLink {
 
 export const profile = {
   name: "Kang Hendar",
-  role: "Web Builder & Digital Systems Developer",
+  role: "Web & Digital Systems Builder",
   greeting: "Hi, I'm Hendar",
   username: "@kangsoe_",
   tagline: "Kang Hendar | Web Builder",
